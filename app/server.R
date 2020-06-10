@@ -4,7 +4,6 @@ library(dplyr)
 
 source(here("ggplot.R"))
 
-# Define server logic required to draw a histogram
 shinyServer(function(input, output) {
 
     options(stringsAsFactors = FALSE)
