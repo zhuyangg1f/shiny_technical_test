@@ -79,3 +79,14 @@ Here is the desired functionality:
 2. Upon entering a valid date range, the plot re-renders to show only data from the selected range.
 3. The upper range of the date range widget must be greater than the lower range (eg. May 15, 2019 to May 10, 2019 is not a valid date, since May 10, 2019 is less than May 15, 2019).
 
+**Upon completion of this stage, commit your changes to Git, with the commit message "Add date range server".**
+
+## Stage 5 - Submit your Shiny app pull request
+
+If you have successfully gotten to this point, congratulations! You are indeed a Shiny ninja. In this last stage, you are required to submit your Shiny app via pull request to the original repository. Here are the steps to accomplish this:
+
+1. Make sure to commit all your local changes to Git, and push them to your forked GitHub repository.
+2. Create a new pull request to the master branch of the LKS-CHART/shiny_technical_test base repository. 
+3. Submit your pull request, and tag @dwhdai for review.
+
+... and you have defeated the Shiny dojo!
