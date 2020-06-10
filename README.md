@@ -7,7 +7,7 @@ Hello Shiny developer! Welcome to the Shiny dojo. Here, you will be completing a
 
 In this technical test, you will be developing a Shiny app that generates data visualizations for an ad clicks dataset. This Shiny app UI will consist of 1) a control panel for user input, and 2) a plotting area. The goal of this app is to allow your team members to see the web traffic on various ads on your platform.
 
-It is imperative that you carefully read the instructions, as each completion of each stage is required for fully unlocking the next stage. Without further ado, let's begin...
+It is imperative that you read the instructions carefully, as completion of each stage is required for fully unlocking the next stage. Without further ado, let's begin...
 
 
 ## Stage 1
