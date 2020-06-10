@@ -1,9 +1,16 @@
 # Starter ggplot function
 
-plot_clicks <- function(ad_clicks){
+plot_clicks <- function(ad_clicks, plot_type = "both"){
     
     require(ggplot2)
     require(dplyr)
+    
+    plot_expr <- switch(plot_type,
+                        scatter = ggplot2::geom_point(size = 4),
+                        line = ggplot2::geom_line(size = 1.2),
+                        both = list(ggplot2::geom_line(size = 1.2), 
+                                    ggplot2::geom_point(size = 4))
+    )
     
     ad_clicks %>% 
         dplyr::group_by(name, day) %>% 
@@ -12,8 +19,7 @@ plot_clicks <- function(ad_clicks){
         ggplot2::ggplot(ggplot2::aes(x = day,
                                      y = clicks,
                                      col = name)) +
-        ggplot2::geom_line(size = 1.2) + 
-        ggplot2::geom_point(size = 6) +
+        plot_expr + 
         ggplot2::scale_x_date(date_breaks = "1 week",
                               date_labels = "%d%b%Y") + 
         ggplot2::labs(
