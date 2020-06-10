@@ -25,4 +25,5 @@ plot_clicks <- function(ad_clicks){
         ggplot2::theme(
             legend.position = "bottom"
         )
+    
 }
