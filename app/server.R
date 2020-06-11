@@ -14,7 +14,12 @@ shinyServer(function(input, output) {
     
     # Create plot output object
     output$plot <- renderPlot({
-        plot_clicks(ad_clicks, input$plot_type)
+        
+        ad_dt <- ad_clicks %>% 
+            filter(day >= input$daterange[1],
+                   day <= input$daterange[2])
+        
+        plot_clicks(ad_dt, input$plot_type)
     })
 
 })
