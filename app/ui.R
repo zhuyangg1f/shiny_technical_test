@@ -19,5 +19,11 @@ shinyUI(fluidPage(
         mainPanel(
             plotOutput("plot")
         )
-    )
+    ),
+    
+    dateRangeInput("daterange", "Date range:",
+                   start  = "2019-05-01",
+                   end    = "2020-06-10",
+                   min    = "2019-05-01",
+                   max    = "2020-06-10")
 ))
